@@ -12,11 +12,16 @@ Output
 
 Sample Input
 one + two =
+
 three four + five six =
+
 zero seven + eight nine =
+
 zero + zero =
 
 Sample Output
 3
+
 90
+
 96
