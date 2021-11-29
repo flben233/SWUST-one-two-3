@@ -3,24 +3,21 @@
  * User: 5120210510
  * Language: Clang18
  * Result: Accepted
- * Time: 3 MS  Memory: 3396 KB
+ * Time: 1 MS  Memory: 3352 KB
  */
-#include<stdio.h>
+#include "stdio.h"
+#include "string.h"
 
 int main()
 {
-    char a[100] = { '\0' }, gc[100];
-    int i = 0, b = 0, c = 0, d = 0, e = 0, f = 0, jieguo = 0;
+    char a[100] = { '\0' };
+    int i, b, c, d, e, f, jieguo;
     while (1) {
-        if (jieguo != 0) {           //用于清除scanf缓冲区
-            scanf("%s", gc);
-            strcpy(gc, "");
-        }
         i = 0, b = 0, c = 0, d = 0, e = 0, f = 0, jieguo = 0;
         strcpy(a, "");        //用于清空数组a中数据
-        char t[5] = "ooooo";
+        char t[6] = "oooooo";
         //***************以上为初始化操作*******************
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 6; i++) {
             scanf("%s", a);
             if (a[0] == '=') {
                 break;
@@ -91,7 +88,7 @@ int main()
             }
             f++;
         }
-        if (f == 1) {   ////将加号后的数字按照位数还原
+        if (f == 1) {   //将加号后的数字按照位数还原
             e = t[c];
         }
         else if (f == 2) {
